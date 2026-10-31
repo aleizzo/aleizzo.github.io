@@ -72,6 +72,8 @@ params:
         #   url: https://github.com/aleizzo
         - name: Twitter
           url: https://x.com/aleizzus
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/alessandro-izzo-391635174/
 
     assets:
         favicon: "icons/favicon-blue.png"
