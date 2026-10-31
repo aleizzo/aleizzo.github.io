@@ -23,7 +23,7 @@ menu:
 
 params:
     homeTitle: "Alessandro Izzo | Economics Ph.D. Student at Boston College"
-    description: "I am an Econ Ph.D. student interested in Labour economics, Cognitive economics, Industrial Organisation, and Political Economy. From Napoli."
+    description: "I am an Econ Ph.D. student interested in Labour economics, Cognitive economics, Industrial Organisation, and Political Economy. From Napoli!"
     images: ["picture.jpeg"]
     author: Alessandro Izzo
     DateFormat: "January 2006"
@@ -51,7 +51,9 @@ params:
           subtitle: "I am an Econ Ph.D. student at <a href='https://www.bc.edu/bc-web/schools/morrissey/departments/economics.html' style='font-weight: bold;'>Boston College</a>.
           I graduated from <a href='https://www.unibocconi.it' style='font-weight: bold;'>Bocconi</a>, and I worked as a predoc at NUS, EUI and Bocconi.
           <br> <br>
-          I am interested in Labour economics, Cognitive economics, Industrial Organisation, and Political Economy. From Napoli.
+          I am interested in Labour economics, Cognitive economics, Industrial Organisation, and Political Economy.
+          <br>
+          From Napoli.
           <br> <br>
           You can find my CV <a href='cv.pdf' style='font-weight: bold;'>here</a>."
           imageUrl: "picture.jpeg"
