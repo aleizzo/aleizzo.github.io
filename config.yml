@@ -1,37 +1,31 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
+baseURL: "https://aleizzo.github.io/"
 title: Alessandro Izzo
+pagination:
+    pagerSize: 20
 theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-pagination:
-  pagerSize: 20
 
 taxonomies:
     tag: tags
 
+# Each menu entry becomes a section on the homepage (content/<folder>/).
 menu:
     main:
-        - name: Books
-          url: books/
-          weight: 5 
-        - name: Papers
-          url: papers/
+        # Uncomment the three lines below once you have a published paper in content/papers/
+        # - name: Published papers
+        #   url: papers/
+        #   weight: 1
+        - name: Working papers
+          url: workinprogress/
           weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
 
 params:
-    description: "This website hosts Alessandro Izzo's research papers, books, course materials, data, curriculum vitae, and contact information."
+    homeTitle: "Alessandro Izzo | Economics Ph.D. Student at Boston College"
+    description: "Alessandro Izzo is a Ph.D. student in economics at Boston College."
+    images: ["picture.jpeg"]
     author: Alessandro Izzo
-    # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: false
@@ -43,8 +37,7 @@ params:
     ShowPostNavLinks: false
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
-    ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    ShowRssButtonInSectionTermList: false
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -54,59 +47,43 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Alessandro Izzo
-          subtitle: "I am a PhD student in the economics department at Boston College. My research focuses on..... I graduated from Bocconi, and later I was a research assistant at NUS, EUI and Bocconi."
+          title: "Alessandro Izzo"
+          subtitle: "I am a Ph.D. student in economics at <a href='https://www.bc.edu/bc-web/schools/morrissey/departments/economics.html' style='font-weight: bold;'>Boston College</a>.
+          I graduated from <a href='https://www.unibocconi.it' style='font-weight: bold;'>Bocconi</a>, and I worked as a predoc at NUS, EUI and Bocconi.
+          <br> <br>
+          I am interested in Labour economics, Cognitive economics, Industrial Organisation, and Political Economy. From Napoli.
+          <br> <br>
+          You can find my CV <a href='cv.pdf' style='font-weight: bold;'>here</a>."
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
-          buttons:
-            - name: Papers
-              url: papers/
-            - name: Data
-              url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-            - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+          imageTitle: Alessandro Izzo
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
         - name: Email
           url: mailto:izzoale@bc.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
+        - name: CV
+          url: cv.pdf
         - name: Google Scholar
-          url: https://scholar.google.com/citations?hl=it&user=8427WQIAAAAJ&view_op=list_works&scilu=&scisig=ACUpqDcAAAAAaFaRAp7Ee0IuxMNHCy7hTGNgtwk&gmla=AH8HC4yeLFEK50Jx_2rMq4z5mKUAPlP9DRzko_bkJS8w21CZBCZfQ0QC_UDfTd4H30VocW7jaBadIaN4oBfqYV7DVkQq-P2sr6Lm_vKm
-        - name: GitHub
-          url: https://github.com/aleizzo
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
+          url: https://scholar.google.com/citations?user=8427WQIAAAAJ&hl=en
+        # - name: GitHub
+        #   url: https://github.com/aleizzo
         - name: Twitter
           url: https://x.com/aleizzus
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
 
     assets:
+        favicon: "icons/favicon-blue.png"
+        favicon16x16: "favicon-16x16.png"
+        favicon32x32: "favicon-32x32.png"
+        apple_touch_icon: "icons/apple-touch-blue.png"
+        disableHLJS: true
         disableScrollBarStyle: true
     cover:
         hiddenInList: false
         hiddenInSingle: true
     label:
       text: "Alessandro Izzo"
-      icon: favicon.ico
+      icon: icons/favicon-blue.svg
       iconHeight: 18
 
 markup:
@@ -115,7 +92,7 @@ markup:
             unsafe: true
     highlight:
         guessSyntax: true
-        style: autumn 
+        style: autumn
     tableOfContents:
         endLevel: 2
         ordered: false

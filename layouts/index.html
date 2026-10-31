@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="academic-layout">
+    <aside class="academic-profile" aria-labelledby="profile-name">
+        {{ with site.Params.profileMode }}
+        <div class="academic-profile-heading">
+            <h1 id="profile-name">{{ .title | default site.Title }}</h1>
+        </div>
+        <img id="profile-portrait" class="academic-portrait" src="{{ .imageUrl | relURL }}"
+            alt="{{ .imageTitle | default site.Title }}" width="160" height="160" fetchpriority="high">
+        <div class="academic-bio">{{ .subtitle | markdownify }}</div>
+        {{ end }}
+        <nav class="academic-contact" aria-label="Contact and profiles">
+            {{ range site.Params.socialIcons }}
+            <a class="academic-contact-icon" href="{{ .url | relURL | safeURL }}" aria-label="{{ .name }}" title="{{ .name }}">
+                {{ partial "svg.html" . }}
+            </a>
+            {{ end }}
+        </nav>
+    </aside>
+
+    <div class="academic-research" id="research">
+        {{- /* Show the section buttons only when there are at least two non-empty sections. */}}
+        {{- $nonEmpty := slice }}
+        {{- range site.Menus.main }}{{ with site.GetPage .URL }}{{ if .RegularPages }}{{ $nonEmpty = $nonEmpty | append . }}{{ end }}{{ end }}{{ end }}
+        {{- if gt (len $nonEmpty) 1 }}
+        <nav class="research-navigation" aria-label="Research sections">
+            {{ range $nonEmpty }}
+            <a href="#{{ .Section }}">{{ .Title }}</a>
+            {{ end }}
+        </nav>
+        {{- end }}
+        {{ range site.Menus.main }}
+        {{ $section := site.GetPage .URL }}
+        {{ with $section }}{{ if .RegularPages }}
+        <section class="research-section" id="{{ .Section }}"
+            aria-labelledby="heading-{{ .Section }}">
+            <h2 id="heading-{{ .Section }}">{{ .Title }}</h2>
+            {{ range .RegularPages.ByDate.Reverse }}
+            {{ partial "home/research-entry.html" . }}
+            {{ end }}
+        </section>
+        {{ end }}{{ end }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}

@@ -4,14 +4,14 @@ date: 2006-03-15
 url: /course/
 aliases:
     - /old_url.html
-tags: ["keyword 1","keyword 2","keyword 3","keyword 4","keyword 5","keyword 6","keyword 7","keyword 8"]
+tags: ["keyword 1","keyword 2"]
 author: ["Course Author 1", "Course Author 2"]
 description: "Course description for search engines (less than 155 characters)" 
 summary: "Course summary for list page (less than 265 characters)
 cover:
-    image: "course_figure.png"
-    alt: "Figure title (preferably 1280x720 pixels)"
-    relative: true
+    image: "/course_figure.png"
+    alt: "Figure from course"
+    relative: false
 editPost:
     URL: "https://youtube.com/course_playlist"
     Text: "YouTube playlist"
@@ -38,9 +38,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ##### Lecture notes
 
-1. [Lecture 1](lecture_1.pdf)
-2. [Lecture 2](lecture_2.pdf)
-3. [Lecture 3](lecture_3.pdf)
+1. [Lecture 1](/lecture_1.pdf)
+2. [Lecture 2](/lecture_2.pdf)
+3. [Lecture 3](/lecture_3.pdf)
 
 ##### Readings
 
@@ -49,9 +49,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ##### Homework
 
-- [Quiz 1](quiz_1.pdf)
-- [Quiz 2](quiz_2.pdf)
-- [Problem set 1](ps_1.pdf)
+- [Quiz 1](/quiz_1.pdf)
+- [Quiz 2](/quiz_2.pdf)
+- [Problem set 1](/ps_1.pdf)
 
 ---
 
@@ -67,9 +67,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ##### Lecture notes
 
-1. [Lecture 4](lecture_4.pdf)
-2. [Lecture 5](lecture_5.pdf)
-3. [Lecture 6](lecture_6.pdf)
+1. [Lecture 4](/lecture_4.pdf)
+2. [Lecture 5](/lecture_5.pdf)
+3. [Lecture 6](/lecture_6.pdf)
 
 ##### Readings
 
@@ -78,6 +78,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ##### Homework
 
-- [Quiz 3](quiz_3.pdf)
-- [Quiz 4](quiz_4.pdf)
-- [Problem set 2](ps_2.pdf)
+- [Quiz 3](/quiz_3.pdf)
+- [Quiz 4](/quiz_4.pdf)
+- [Problem set 2](/ps_2.pdf)
