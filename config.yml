@@ -23,7 +23,7 @@ menu:
 
 params:
     homeTitle: "Alessandro Izzo | Economics Ph.D. Student at Boston College"
-    description: "I am an Econ Ph.D. student interested in Labour economics, Cognitive economics, Industrial Organisation, and Political Economy. From Napoli "
+    description: "I am an Econ Ph.D. student interested in Labour economics, Cognitive economics, Industrial Organisation, and Political Economy. From Napoli."
     images: ["picture.jpeg"]
     author: Alessandro Izzo
     DateFormat: "January 2006"
