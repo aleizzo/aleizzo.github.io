@@ -9,7 +9,7 @@
 
 .academic-home .main {
     max-width: 1140px;
-    padding: 56px 40px 32px;
+    padding: 56px 40px 0;
 }
 
 .academic-layout {
@@ -230,7 +230,7 @@
 .academic-home > .footer {
     background: transparent;
     margin: 0 0 0 var(--profile-panel-edge);
-    padding: 20px max(40px, calc((100vw - 1060px) / 2)) 20px 30px;
+    padding: 4px max(40px, calc((100vw - 1060px) / 2)) 8px 30px;
     text-align: right;
     font-size: 11px;
     color: #858585;
@@ -305,5 +305,23 @@
 
     .research-section + .research-section {
         margin-top: 34px;
+    }
+}
+
+/* Wide screens: the footnote sits in the white area on the right, so the profile
+   column can run to the bottom of the window without pushing the footnote off-screen. */
+@media (min-width: 761px) {
+    .academic-research {
+        padding-bottom: 36px;
+    }
+
+    /* Fill the window so the footnote always sits at the bottom edge. */
+    .academic-home .main {
+        box-sizing: border-box;
+        min-height: 100dvh;
+    }
+
+    .academic-home > .footer {
+        margin-top: -36px;
     }
 }
