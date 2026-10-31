@@ -9,8 +9,7 @@
 
 .academic-home .main {
     max-width: 1140px;
-    padding: 56px 40px 80px;
-    min-height: calc(100vh - 62px);
+    padding: 56px 40px 32px;
 }
 
 .academic-layout {
@@ -20,6 +19,7 @@
     gap: 100px;
 }
 
+/* On wide screens the profile column scrolls on its own when the window is short. */
 .academic-profile {
     position: sticky;
     top: 36px;
